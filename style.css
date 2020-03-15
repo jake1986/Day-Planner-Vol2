@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.plan-text {
+    text-align: center;
+}
+
+#date {
+    text-align: center;
+}
+
+.events {
+   margin: 15px 15px 15px 10px;
+}
+
+.timePad {
+    padding-top: 5px;
+}
+
+.plan-text {
+    font-family: 'Righteous', cursive;
+    font-size: 36px;
+}
+
+body {
+    background: url("../Day-Planner/images/pattern.png");
+}
+
+.jumbotron {
+    margin-top: 25px;
+}
+
+/* Colors to determine whether the timeblocks are in the past, present, or future */
+.past {
+    background: grey;
+}
+
+.present {
+    background: red;
+}
+
+.future {
+    background: green;
+}
+
+/* Color for ADD buttons */
+.purple {
+    background: purple;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* CSS for the size of the added event */
+p {
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.clear {
+    margin-left: 45%;
+    margin-bottom: 25px;
+}
+
+#clearB {
+    padding: 2%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 991px) {
+    .clear {
+        margin-left: 42%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .clear {
+        margin-left: 40%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .clear {
+        margin-left: 39%;
+    }
+}

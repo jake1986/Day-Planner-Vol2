@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Planner</title>
+    <link rel="stylesheet" href="../Day-Planner-Vol2/style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="jumbotron">
+                <p class="plan-text">DAY PLANNER</p>
+                <h4 id="date"></h4>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark timePad" value="8">8:00 a.m.</div>
+                <div class="col-md-8 border border-dark">
+                    <input id="makeEvent-8" type="text" placeholder="ADD YOUR EVENT" class="events"
+                        onfocus="this.value=''" value=""></input><span id="printEvent-8"></span>
+                </div>
+                <div id="newEvent-8" class="col-md-2 border border-dark purple">
+                    <p id="commit-8">ADD</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark timePad" value="9">9:00 a.m.</div>
+                <div class="col-md-8 border border-dark">
+                    <input id="makeEvent-9" type="text" placeholder="ADD YOUR EVENT" class="events"
+                        onfocus="this.value=''" value=""></input><span id="printEvent-9"></span>
+                </div>
+                <div id="newEvent-9" class="col-md-2 border border-dark purple">
+                    <p id="commit-9">ADD</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark timePad" value="10">10:00 a.m.</div>
+                <div class="col-md-8 border border-dark">
+                    <input id="makeEvent-10" type="text" placeholder="ADD YOUR EVENT" class="events"
+                        onfocus="this.value=''" value=""></input><span id="printEvent-10"></span>
+                </div>
+                <div id="newEvent-10" class="col-md-2 border border-dark purple">
+                    <p id="commit-10">ADD</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark timePad" value="11">11:00 a.m.</div>
+                <div class="col-md-8 border border-dark">
+                    <input id="makeEvent-11" type="text" placeholder="ADD YOUR EVENT" class="events"
+                        onfocus="this.value=''" value=""></input><span id="printEvent-11"></span>
+                </div>
+                <div id="newEvent-11" class="col-md-2 border border-dark purple">
+                    <p id="commit-11">ADD</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark timePad" value="12">12:00 p.m.</div>
+                <div class="col-md-8 border border-dark orange">
+                    <input id="makeEvent-12" type="text" placeholder="ADD YOUR EVENT" class="events"
+                        onfocus="this.value=''" value=""></input><span id="printEvent-12"></span>
+                </div>
+                <div id="newEvent-12" class="col-md-2 border border-dark purple">
+                    <p id="commit-12">ADD</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark timePad" value="13">1:00 p.m.</div>
+                <div class="col-md-8 border border-dark">
+                    <input id="makeEvent-13" type="text" placeholder="ADD YOUR EVENT" class="events"
+                        onfocus="this.value=''" value=""></input><span id="printEvent-13"></span>
+                </div>
+                <div id="newEvent-13" class="col-md-2 border border-dark purple">
+                    <p id="commit-13">ADD</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark timePad" value="14">2:00 p.m.</div>
+                <div class="col-md-8 border border-dark">
+                    <input id="makeEvent-14" type="text" placeholder="ADD YOUR EVENT" class="events"
+                        onfocus="this.value=''" value=""></input><span id="printEvent-14"></span>
+                </div>
+                <div id="newEvent-14" class="col-md-2 border border-dark purple">
+                    <p id="commit-14">ADD</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark timePad" value="15">3:00 p.m.</div>
+                <div class="col-md-8 border border-dark">
+                    <input id="makeEvent-15" type="text" placeholder="ADD YOUR EVENT" class="events"
+                        onfocus="this.value=''" value=""></input><span id="printEvent-15"></span>
+                </div>
+                <div id="newEvent-15" class="col-md-2 border border-dark purple">
+                    <p id="commit-15">ADD</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark timePad" value="16">4:00 p.m.</div>
+                <div class="col-md-8 border border-dark">
+                    <input id="makeEvent-16" type="text" placeholder="ADD YOUR EVENT" class="events"
+                        onfocus="this.value=''" value=""></input><span id="printEvent-16"></span>
+                </div>
+                <div id="newEvent-16" class="col-md-2 border border-dark purple">
+                    <p id="commit-16">ADD</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark timePad" value="17">5:00 p.m.</div>
+                <div class="col-md-8 border border-dark">
+                    <input id="makeEvent-17" type="text" placeholder="ADD YOUR EVENT" class="events"
+                        onfocus="this.value=''" value=""></input><span id="printEvent-17"></span>
+                </div>
+                <div id="newEvent-17" class="col-md-2 border border-dark purple">
+                    <p id="commit-17">ADD</p>
+                </div>
+            </div>
+        </div>
+    <script src="../Day-Planner-Vol2/app.js"></script>
+</body>
+
+</html>
